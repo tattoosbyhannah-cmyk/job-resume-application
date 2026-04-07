@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Generated documents — these contain personal data and tailored cover letters.
+# Regenerate them locally with: node generate_<name>.js
+*.docx
+*.pdf
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Local env / secrets
+.env
+.env.local
+*.key
+*.pem
