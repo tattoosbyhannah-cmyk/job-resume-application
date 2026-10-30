@@ -39,6 +39,7 @@ const F=[
   ['input[name="org"]',${jsString(profile.currentCompany)}],
   ['input[name="urls[LinkedIn]"]',${jsString(profile.linkedinUrl)}],
   ['input[name="urls[Portfolio]"]',${jsString(profile.portfolioUrl)}],
+  ['input[name="urls[GitHub]"]',${jsString(profile.githubUrl)}],
   ['input[name="location"]',${jsString(profile.location)}]
 ];
 F.forEach(([sel,val])=>{const el=d.querySelector(sel);if(el&&val)s(el,val);});
@@ -83,6 +84,7 @@ d.querySelectorAll('input[type="text"],input[type="url"],textarea').forEach(el=>
   const id=(el.id||'').toLowerCase();const nm=(el.name||'').toLowerCase();
   if(/linkedin/.test(id+nm)&&!el.value)s(el,${jsString(profile.linkedinUrl)});
   if(/(portfolio|website|personal[\\s_-]*site|personal[\\s_-]*url)/.test(id+nm)&&!el.value)s(el,${jsString(profile.portfolioUrl)});
+  if(/github/.test(id+nm)&&!el.value)s(el,${jsString(profile.githubUrl)});
   if(/(how[\\s_-]did[\\s_-]you[\\s_-]hear|hear[\\s_-]about|source|referral)/.test(id+nm)&&!el.value)s(el,'Job board search');
 });
 d.querySelectorAll('select').forEach(sel=>{

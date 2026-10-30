@@ -14,6 +14,7 @@ const EMPTY = {
   location: '',
   linkedinUrl: '',
   portfolioUrl: '',
+  githubUrl: '',
   currentCompany: '',
   workAuth: true,
   needsSponsorship: false,
@@ -76,6 +77,7 @@ export default function Step2Profile() {
         <FormField id="currentCompany" label="Current company" value={form.currentCompany} onChange={(v) => update('currentCompany', v)} />
         <FormField id="linkedinUrl" label="LinkedIn URL" value={form.linkedinUrl} onChange={(v) => update('linkedinUrl', v)} placeholder="https://linkedin.com/in/your-handle" />
         <FormField id="portfolioUrl" label="Portfolio / personal website" value={form.portfolioUrl} onChange={(v) => update('portfolioUrl', v)} placeholder="https://yoursite.com" />
+        <FormField id="githubUrl" label="GitHub URL" value={form.githubUrl} onChange={(v) => update('githubUrl', v)} placeholder="https://github.com/your-handle" />
 
         <div className="field">
           <label>Are you legally authorized to work in the US?</label>

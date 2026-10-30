@@ -15,7 +15,7 @@ export default function Step1Welcome() {
         <h2>What you'll need</h2>
         <ul>
           <li>Your contact info (name, email, phone, location)</li>
-          <li>LinkedIn URL and portfolio URL (optional)</li>
+          <li>LinkedIn, portfolio, and GitHub URLs (optional)</li>
           <li>A list of your past jobs with bullet points for each</li>
           <li>Education and certifications</li>
           <li>For each role you're targeting (e.g. "Marketing Director"), a cover letter template you write once and re-use across companies</li>

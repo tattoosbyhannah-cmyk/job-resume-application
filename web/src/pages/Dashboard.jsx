@@ -47,7 +47,7 @@ export default function Dashboard() {
             <div className="card">
               <h2>Profile</h2>
               <p>{profile.firstName} {profile.lastName} · {profile.email}</p>
-              <p className="meta">{profile.location}</p>
+              <p className="meta">{[profile.location, profile.githubUrl].filter(Boolean).join(' · ')}</p>
               <Link to="/wizard/profile" className="btn secondary">Edit profile</Link>
             </div>
 

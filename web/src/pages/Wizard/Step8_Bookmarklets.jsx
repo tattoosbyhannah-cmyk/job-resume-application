@@ -31,9 +31,10 @@ export default function Step8Bookmarklets() {
       <StepNav current="bookmarklets" />
       <h1>Install your bookmarklets</h1>
       <p className="meta">
-        These two browser shortcuts auto-fill your name, email, phone, location, and
-        work-authorization answers on Lever and Greenhouse application pages. They do
-        NOT click submit — you'll always have a chance to review.
+        These two browser shortcuts auto-fill your name, email, phone, location,
+        links (LinkedIn, portfolio, GitHub), and work-authorization answers on Lever
+        and Greenhouse application pages. They do NOT click submit — you'll always
+        have a chance to review.
       </p>
 
       <BookmarkletInstallCard

@@ -136,7 +136,7 @@ function sectionHeading(text) {
  * Build a single combined cover letter + resume .docx for one company.
  *
  * @param {object} bundle
- * @param {object} bundle.profile         { firstName, lastName, email, phone, location, linkedinUrl, portfolioUrl, currentCompany }
+ * @param {object} bundle.profile         { firstName, lastName, email, phone, location, linkedinUrl, portfolioUrl, githubUrl, currentCompany }
  * @param {Array}  bundle.experience      [{ title, company, city, startDate, endDate, bullets[] }]
  * @param {Array}  bundle.education       [{ level, fieldOfStudy, school, city, startDate, endDate }]
  * @param {object} bundle.roleTemplate    { displayName, professionalSummary, highlights[], coverLetterParagraphs[] }
@@ -167,6 +167,7 @@ export async function buildResumeDocBlob(bundle) {
   const linksLine = [
     profile.linkedinUrl,
     profile.portfolioUrl,
+    profile.githubUrl,
   ].filter(Boolean).join('  |  ')
 
   // ── Cover letter section (page 1) ──
